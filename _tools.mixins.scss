@@ -13,7 +13,7 @@
 // single value, e.g.:
 //
 // .foo {
-//     @include font-size(10px);
+//     @include inuit-font-size(10px);
 // }
 //
 @mixin inuit-font-size($inuit-font-size, $inuit-line-height: true) {
