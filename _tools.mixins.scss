@@ -41,7 +41,7 @@
 // }
 //
 // This parameter can be any integer, ‘inherit’, or ‘normal’. If you don’t want
-// a line-height at all, pass in a second paramater of ‘none’:
+// a line-height at all, pass in a second paramater of ‘none’ or ‘false’:
 //
 // .foo {
 //     @include inuit-font-size(12px, none);
@@ -72,7 +72,7 @@
             line-height: $inuit-line-height;
         }
 
-        @elseif ($inuit-line-height == none) {
+        @elseif ($inuit-line-height == none or $inuit-line-height == false) {
         }
 
         @else {
