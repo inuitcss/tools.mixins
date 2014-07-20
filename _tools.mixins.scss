@@ -64,11 +64,7 @@
 
     @else {
 
-        @if ($inuit-line-height == inherit or $inuit-line-height == normal) {
-            line-height: $inuit-line-height;
-        }
-
-        @elseif (type-of($inuit-line-height) == number) {
+        @if (type-of($inuit-line-height) == number or $inuit-line-height == inherit or $inuit-line-height == normal) {
             line-height: $inuit-line-height;
         }
 
