@@ -1,6 +1,6 @@
-///*------------------------------------*\
-//    #MIXINS
-//\*------------------------------------*/
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
 
 // inuitcss has a number of default mixins that the framework, and developers
 // working with it, can make use of.
@@ -58,7 +58,7 @@
     font-size: $inuit-font-size;
     font-size: ($inuit-font-size / $inuit-base-font-size) * 1rem;
 
-    @if $inuit-line-height == auto {
+    @if ($inuit-line-height == auto) {
         line-height: ceil($inuit-font-size / $inuit-base-line-height) * ($inuit-base-line-height / $inuit-font-size);
     }
 
